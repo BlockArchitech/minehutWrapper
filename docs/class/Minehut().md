@@ -2,25 +2,26 @@
 
 ## Method consoleCommand	
 
-example usage:
+Example usage:
 
 ```py
 mh = Minehut(token, sessid)
 mh.consoleCommand("/command", "serverid")
 ```
 
-description:
+Description:
 
 Send a console command to a server.
 
 ## Method getServerID
 
-example usage:
+Example usage:
 
 ```py
 mh = Minehut(token, sessid)
 mh.getServerID("servername")
 ```
 
-description:
+Description:
+
 Get the server ID of a server by name. No authentication is required.
