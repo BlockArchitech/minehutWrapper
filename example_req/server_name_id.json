@@ -1,0 +1,33 @@
+{
+    "server": { // server key
+        "categories": [],
+        "inheritedCategories": [],
+        "purchased_icons": [],
+        "backup_slots": 0, // no. of backups
+        "suspended": false, // server is suspended (cancel all api requests if this is true since we can't do anything)
+        "server_version_type": "PAPER", // spigot/bukkit/paper/vanilla
+        "proxy": false, // if server is part of a proxy (bungeecord, velocity, etc)
+        "connectedServers": [], // no idea
+        "_id": "5bba8f6ce5ede455ce39b398", // what we want
+        "owner": "5bba8e4dce4bda560db85351",
+        "name": "DuelPlex", // name as entered by user
+        "name_lower": "duelplex", // lowercase name
+        "creation": 1538953068162, // datetime string
+        "platform": "java", // ofc it's java what else would it be
+        "storage_node": "s2", // might be useful later
+        "__v": 2, // what
+        "port": -1, // ah yes, port numbers
+        "last_online": 1641224867775, // datetime string: last online
+        "motd": "abcdef", // MOTD as entered by user
+        "server_plan": "FREE", // self explainitory
+        "credits_per_day": 0,
+        "visibility": true, // visible to general public
+        "default_banner_image": "server-banner-10.png", // banner image
+        "default_banner_tint": "#00FFFF", // banner tint
+        "online": false, // if server is online
+        "maxPlayers": 0, // only when online
+        "playerCount": 0, // only when online
+        "rawPlan": "", // have never seen this used/filled in
+        "activeServerPlan": "Free" // self explainitory
+    }
+}
