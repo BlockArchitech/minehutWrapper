@@ -5,12 +5,6 @@ class Minehut(object):
 	def __init__(self, authtoken, sessid):
 		self.authtoken = authtoken
 		self.sessid = sessid
-		# baseurl = "https://api.minehut.com/"
-		# headers = {
-		# 	"Authorization": "{}".format(self.authtoken),
-		# 	"X-Session-ID": self.sessid
-		# }
-		# TODO: Figure out why Minehut.headers doesn't work.
 	def consoleCommand(self, command, serverid):
 		baseurl = "https://api.minehut.com/"
 		headers = {
