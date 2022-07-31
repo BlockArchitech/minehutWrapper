@@ -36,4 +36,31 @@ class Minehut(object):
 			return id
 		else:
 			raise MHAPIInvalidResponse("Invalid response from MHAPI. Response code: {}".format(r.status_code))
+	def uploadFile(self, file, serverid, path):
+		baseurl = "https://api.minehut.com/"
+		headers = {
+			"Authorization": "{}".format(self.authtoken),
+			"X-Session-ID": self.sessid
+		}
+		url = baseurl + "file/" + "upload/" +"{}".format(serverid) + "/" + "{}".format(path)
+		# convert file object to binary
+		file_binary = file.read()
+		
+		# example payload: {"file": File (binary)}
+		payload = {
+			"file": file_binary
+		}
+
+		# request
+		r = requests.post(url, headers=headers, files=payload)
+		if r.status_code == 200:
+			print(f'File uploaded successfully. Status Code: {r.status_code}')
+			return r.json()
+		else:
+			raise MHAPIInvalidResponse(f"Invalid response from MHAPI. Response code: {r.status_code} {r.json} ")
+	
+
+
+		
+
 	
