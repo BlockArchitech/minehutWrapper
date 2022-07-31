@@ -28,7 +28,7 @@ class Minehut(object):
 			"Authorization": "{}".format(self.authtoken),
 			"X-Session-ID": self.sessid
 		}
-		url = baseurl + "{}".format(serverName) + "?byName=true"
+		url = baseurl + "server/" + "{}".format(serverName) + "?byName=true"
 		r = requests.get(url, headers=headers)
 
 		if r.status_code == 200:
